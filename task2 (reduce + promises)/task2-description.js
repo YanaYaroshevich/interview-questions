@@ -19,15 +19,10 @@ function apiCall(param) {
 }
 
 function work(arr) {
-	return arr.reduce((prev, cur) => {
-		return prev.then((res) => {
-			return apiCall(res + cur);
-		});
-
-	}, Promise.resolve(0))
+	/* Solution goes here */
 }
 
 const arr = [1, 2, 3, 4, 5];
-work(arr).then((res) => {
-	console.log(`RESULT: ${res}`);
-});
+
+/* Some details may be added for the function call */
+work(arr);
